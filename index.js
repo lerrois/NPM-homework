@@ -1,9 +1,8 @@
 'use strict';
 
+const hoursInput = prompt('Please, input hours quantity to convert to seconds');
 
-const hoursInput = prompt('Please, input hours quantity to convert to seconds')
-
-if (hoursInput === null || hoursInput === '' || isNaN(Number(hoursInput))) {
+if (hoursInput === null || hoursInput === '' || Number.isNaN(Number(hoursInput))) {
     alert('It is not a joke. Please, enter a valid hours number');
 }
 else {
